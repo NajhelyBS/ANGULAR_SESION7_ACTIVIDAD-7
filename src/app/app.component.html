@@ -2,13 +2,16 @@
 
 <main>
   <section>
-      <div id="dado">
-          <h5>{{number}}</h5>
-          
+      <div id="dado" class="d-flex justify-content-center">
+          <h5 class="text-center">{{number}}</h5>
       </div>
   </section>
 </main>
 
-<app-dado [number]="number" (randomNumber)="number= $event"></app-dado>
-  
+<div class="row">
+  <div class="d-flex justify-content-center">
+    <app-dado [number]="number" (randomNumber)="number= $event"></app-dado>   
+
+</div>
+</div> 
 </body>

@@ -1,4 +1,24 @@
-body {
-    background-color: red;
-    
+#container {
+    width: 200px;
 }
+button {
+    color: white;
+    text-shadow: 1px 3px 3px #49dace;
+    font-weight: 900;
+    font-size: 20px;
+    -webkit-text-stroke-color: rgb(51, 53, 156);
+    -webkit-text-stroke-width: 0.8px;
+    width: 100%;
+    background: rgb(51, 53, 156);
+    background: linear-gradient(0deg, rgba(88, 92, 182, 0.712) 0%, rgb(51, 53, 156) 100%);
+    border: none;
+}
+
+button:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+            -4px -4px 6px 0 rgba(116, 125, 136, .5),
+            inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+    }
+
+  
