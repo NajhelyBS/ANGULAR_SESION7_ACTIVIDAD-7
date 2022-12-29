@@ -1,6 +1,10 @@
 
-<body>
-  <router-outlet></router-outlet>
-  <button class="btn btn-primary" type="button" (click)="numeroAleatorio()">RODAR DADO</button>
-</body>
+<main>
+  <section>
+      <div id="dado">
+          <h5>{{number}}</h5>
+      </div>
+  </section>
+</main>
 
+<app-dado [number]="number" (randomNumber)="number= $event"></app-dado>

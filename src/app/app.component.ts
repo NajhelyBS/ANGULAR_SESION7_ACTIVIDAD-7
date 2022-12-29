@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,16 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'actividad-7';
-
-  lados = 6;
-
-  numeroAleatorio(){
-    
-    var randomNumber = Math.floor(Math.random() * this.lados) + 1;
-    
-    alert(randomNumber);
-
-  }
+  
+  number:Number = 0;
 
   }
 
