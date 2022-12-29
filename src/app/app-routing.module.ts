@@ -4,7 +4,7 @@ import { DadoComponent } from './elementos/dado/dado.component';
 
 const routes: Routes = [{
   path:"", component:DadoComponent
-},];
+}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
