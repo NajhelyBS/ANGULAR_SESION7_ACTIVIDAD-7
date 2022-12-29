@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter  } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dado',
@@ -7,22 +7,32 @@ import { Component, Input, Output, EventEmitter  } from '@angular/core';
 })
 export class DadoComponent {
 
-  @Input() number:Number = 0;
+  @Input() number: Number = 0;
   @Output() randomNumber = new EventEmitter<Number>();
 
+  lados=6;
+  newNumber = 0; 
 
-  lados = 6;
-
-  numeroAleatorio(){
+  numeroAleatorio() {
     
+      var randomNumber = Math.floor(Math.random() * this.lados) + 1;
+      
 
-    var randomNumber = Math.floor(Math.random() * this.lados) + 1;
-    alert(randomNumber);
-    this.number = randomNumber;
-    this. randomNumber.emit(this.number);
+      if (randomNumber != this.newNumber){
+      this.newNumber = randomNumber;
+      this.number = this.newNumber;
+      this.randomNumber.emit(this.number);
+    
+    } else if (randomNumber == this.newNumber){
+      while(randomNumber == this.newNumber){
+      var randomNumber = Math.floor(Math.random() * this.lados) + 1;}
+      this.newNumber = randomNumber;
+      this.number = this.newNumber;
+      this.randomNumber.emit(this.number);
+    } 
+  
+  
+  }  
 
-  }
-
- 
 
 }

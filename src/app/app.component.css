@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    height: 30em;
+    margin: 50px;
+    align-items: center;
+}
+
+main {
+    background-color: pink;
+}
+
+h5 {
+    font-size: 300px;
+    padding-top: 20px;
+color: aliceblue;
+}
